@@ -5,8 +5,8 @@ import java.util.StringJoiner;
 
 public class Result<T> {
 
-	private Status status;
-	private T value;
+	private final Status status;
+	private final T value;
 
 	public Result(Status status, T value) {
 		this.status = status;
