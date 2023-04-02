@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <appender name="Console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+<!--            https://logback.qos.ch/manual/layouts.html#formatModifiers-->
+            <pattern>-%highlight(%level)- [%.10thread tst] %cyan(%logger{100}) - %msg %n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="WARN">
+        <appender-ref ref="Console"/>
+    </root>
+
+<!--    <logger name="be.willemsdieter" level="WARN"/>-->
+
+<!--    <logger name="org.testcontainers" level="ERROR"/>-->
+
+<!--    <logger name="org.hibernate.SQL" level="WARN"/>-->
+<!--    <logger name="org.hibernate.stat" level="WARN"/>-->
+<!--    <logger name="org.hibernate" level="WARN"/>-->
+
+</configuration>
+
+
